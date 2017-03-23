@@ -1,0 +1,19 @@
+{
+  "name": "peak-events-catering",
+  "authors": "Chris Foster",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack-dev-server --port=4200 --open",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "fullpage.js": "^2.9.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "html-webpack-plugin": "^2.28.0",
+    "uglifyjs-webpack-plugin": "^0.3.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "~2.3.0"
+  }
+}
