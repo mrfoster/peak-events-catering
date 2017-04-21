@@ -1,0 +1,32 @@
+.no-js {
+  display: none;
+}
+
+$base-font-family: 'Open Sans', sans-serif;;
+$secondary-font-family: "Open Sans Condensed", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+html {
+  background-image: url("http://res.cloudinary.com/peakeventscatering/image/upload/f_auto,q_auto/v1492635694/chef.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

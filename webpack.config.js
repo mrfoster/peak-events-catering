@@ -2,6 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].[contenthash].css",
+    disable: process.env.NODE_ENV === "development"
+});
 
 module.exports = {
     entry: './src/app.js',
@@ -12,7 +18,11 @@ module.exports = {
     module: {
         rules: [{
             test: /\.scss$/,
-            loader: "style-loader!css-loader!sass-loader!postcss-loader"
+            use: extractSass.extract({
+                use: ["css-loader", "postcss-loader", "sass-loader"],
+                // use style-loader in development
+                fallback: "style-loader"
+            })
         }, {
             test: /\.css$/,
             loader: "style-loader!css-loader"
@@ -30,6 +40,7 @@ module.exports = {
             "filename": "./index.html",
             "favicon": "src/favicon.ico"
         }),
+        extractSass,
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"

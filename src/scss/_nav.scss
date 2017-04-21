@@ -1,0 +1,19 @@
+.nav {
+  text-transform: uppercase;
+
+  a {
+    display: inline-block;
+    margin: 0 .5em;
+  }
+
+  &--main {
+    h1 {
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+
+  &--contact {
+    text-transform: lowercase;
+  }
+}

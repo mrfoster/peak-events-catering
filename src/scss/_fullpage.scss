@@ -1,0 +1,38 @@
+
+$color: rgba(255,255,255,0.5);
+$active-color: rgba(255,255,255,0.8);
+$arrow-width: 1.2em;
+$arrow-height: 1.5em;
+$arrow-margin: 1em;
+
+.fp-controlArrow {
+  margin-top: -$arrow-height;
+
+  &.fp-next {
+    right: $arrow-margin !important;
+    border-width: $arrow-height 0 $arrow-height $arrow-width !important;
+    border-left-color: $color !important;
+
+    &:hover {
+      border-left-color: $active-color !important;
+    }
+  }
+
+  &.fp-prev {
+    left: $arrow-margin !important;
+    border-width: $arrow-height $arrow-width $arrow-height 0 !important;
+    border-right-color: $color !important;
+
+    &:hover {
+      border-right-color: $active-color !important;
+    }
+  }
+}
+
+.fp-slidesNav ul li a span {
+  background-color: $color !important;
+
+  &:hover {
+    background-color: $active-color !important;
+  }
+}

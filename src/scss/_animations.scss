@@ -1,0 +1,38 @@
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+.header {
+  animation: 1s ease-out 0s 1 slideInFromTop forwards;
+}
+
+.nav a {
+  transition: all .2s ease-in-out;
+  /*opacity: .8;*/
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

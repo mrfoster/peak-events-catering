@@ -1,0 +1,40 @@
+.menu {
+  font-size: 0.6em;
+  h3 {
+    margin-top: 0;
+  }
+
+  > div {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fafafa;
+    padding: 1em;
+    height: 80vh;
+    width: 80vw;
+    color: #333;
+
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0;
+
+      strong {
+        display: block;
+      }
+
+      span {
+        font-size: 0.8em;
+      }
+      list-style-type: none;
+      margin: 0 .5em;
+    }
+  }
+
+  h5 {
+    margin: 0;
+  }
+}
