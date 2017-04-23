@@ -3,9 +3,10 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
+    filename: "[name].[contenthash:20].css",
     disable: process.env.NODE_ENV === "development"
 });
 
@@ -13,13 +14,26 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.join(process.cwd(), "dist"),
-        filename: 'bundle.js'
+        filename: 'bundle.[chunkhash:20].js'
     },
     module: {
         rules: [{
             test: /\.scss$/,
             use: extractSass.extract({
-                use: ["css-loader", "postcss-loader", "sass-loader"],
+                use: [
+                    "css-loader",
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: function () {
+                                return [
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+                    },
+                    "sass-loader"
+                ],
                 // use style-loader in development
                 fallback: "style-loader"
             })
@@ -45,6 +59,10 @@ module.exports = {
             $: "jquery",
             jQuery: "jquery"
         }),
-        new WebpackCleanupPlugin()
+        new WebpackCleanupPlugin(),
+        new CopyWebpackPlugin([
+            // {output}/file.txt
+            { from: 'web.config' }
+        ])
     ]
 };

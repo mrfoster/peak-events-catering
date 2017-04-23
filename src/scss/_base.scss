@@ -2,7 +2,7 @@
   display: none;
 }
 
-$base-font-family: 'Open Sans', sans-serif;;
+$base-font-family: 'Open Sans', sans-serif;
 $secondary-font-family: "Open Sans Condensed", sans-serif;
 
 h1,
@@ -14,16 +14,40 @@ h6 {
   text-transform: uppercase;
 }
 
-html {
-  background-image: url("http://res.cloudinary.com/peakeventscatering/image/upload/f_auto,q_auto/v1492635694/chef.jpg");
+.section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+#section0 {
+  background-image: url("https://res.cloudinary.com/peakeventscatering/image/upload/c_scale,f_auto,h_800,q_auto/v1492989351/1_rfkb2k.png");
+}
+
+#section1 {
+  background-image: url("https://res.cloudinary.com/peakeventscatering/image/upload/c_scale,f_auto,h_800,q_auto/v1492989362/8_tb8wg6.png");
+}
+
+#section2 {
+  background-image: url("https://res.cloudinary.com/peakeventscatering/image/upload/c_scale,f_auto,h_800,q_auto/v1492989324/3_pgha5p.png");
+}
+
+html {
+  //  background-image: url("http://res.cloudinary.com/peakeventscatering/image/upload/f_auto,q_auto/v1492635694/chef.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .page {
+    background-color: rgba(0,0,0,0.3);
+  }
+
+}
+
 body {
   background-color: rgba(0,0,0,0.3);
   color: #fff;
+  //color: #000;
 }
 
 a {

@@ -57,18 +57,18 @@
   }
 }
 
-.section.active > .page {
+.section.active > .page > div {
   animation: 1s ease-out 0s 1 fadeIn forwards;
 }
 
-.section:not(.active) .page {
+.section:not(.active) .page > div {
   animation: 0.5s ease-out 0s 1 fadeOut forwards;
 }
 
-.section.active .slide.active > .page {
+.section.active .slide.active > .page > div {
   animation: 1s ease-out 0s 1 fadeIn forwards;
 }
 
-.slide:not(.active) > .page {
+.slide:not(.active) > .page > div {
   animation: 0.5s ease-out 0s 1 fadeOut forwards;
 }
