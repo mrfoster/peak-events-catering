@@ -1,4 +1,5 @@
 import './scss/app.scss';
+import '../node_modules/font-awesome/css/font-awesome.css';
 import '../node_modules/jquery/dist/jquery';
 import '../node_modules/fullpage.js/dist/jquery.fullpage';
 

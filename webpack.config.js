@@ -61,8 +61,8 @@ module.exports = {
         }),
         new WebpackCleanupPlugin(),
         new CopyWebpackPlugin([
-            // {output}/file.txt
-            { from: 'web.config' }
+            { from: 'web.config' },
+            { from: 'assets', to: 'assets' }
         ])
     ]
 };
