@@ -13,10 +13,6 @@
     height: 72vh;
     width: 72vw;
     color: #666;
-
-    a {
-      color: #666;
-    }
     position: relative;
   }
 
@@ -25,7 +21,10 @@
     top: 1em;
     right: 1em;
     visibility: hidden;
-    opacity: 0.8;
+    opacity: .8;
+
+    color: #666;
+
     &:after {
       font-size: 1.5em;
       visibility: visible;
@@ -33,6 +32,7 @@
       display: inline-block;
       content: '\f019';
     }
+
     &:hover {
       opacity: 1;
     }
