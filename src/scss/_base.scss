@@ -35,24 +35,47 @@ h6 {
 }
 
 html {
-  //  background-image: url("http://res.cloudinary.com/peakeventscatering/image/upload/f_auto,q_auto/v1492635694/chef.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   .page {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,0.1);
   }
 
 }
 
 body {
-  background-color: rgba(0,0,0,0.3);
-  color: #fff;
-  //color: #000;
+  color: #333;
 }
 
 a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
+}
+
+html.dark {
+  body {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+
+    .page {
+      background-color: rgba(0,0,0,0.2);
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+html.stock {
+  background-image: url("http://res.cloudinary.com/peakeventscatering/image/upload/f_auto,q_auto/v1492635694/chef.jpg");
+
+  #section0,
+  #section1,
+  #section2 {
+    background-image: none;
+  }
+
 }
