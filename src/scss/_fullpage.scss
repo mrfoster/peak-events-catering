@@ -1,9 +1,12 @@
 
-$color: rgba(255,255,255,0.5);
-$active-color: rgba(255,255,255,0.8);
+$color: rgba(0,0,0,0.3);
+$active-color: rgba(0,0,0,0.6);
 $arrow-width: 1.2em;
 $arrow-height: 1.5em;
 $arrow-margin: 1em;
+
+$dark-color: rgba(255,255,255,0.5);
+$dark-active-color: rgba(255,255,255,0.8);
 
 .fp-controlArrow {
   margin-top: -$arrow-height;
@@ -35,4 +38,33 @@ $arrow-margin: 1em;
   &:hover {
     background-color: $active-color !important;
   }
+}
+
+.dark {
+  .fp-controlArrow {
+    &.fp-next {
+      border-left-color: $dark-color !important;
+
+      &:hover {
+        border-left-color: $dark-active-color !important;
+      }
+    }
+
+    &.fp-prev {
+      border-right-color: $dark-color !important;
+
+      &:hover {
+        border-right-color: $dark-active-color !important;
+      }
+    }
+  }
+
+  .fp-slidesNav ul li a span {
+    background-color: $dark-color !important;
+
+    &:hover {
+      background-color: $dark-active-color !important;
+    }
+  }
+
 }
