@@ -1,12 +1,15 @@
 .header {
   font-family: $secondary-font-family;
-  font-weight: 600;
+  font-weight: 700;
+
+  h1 {
+    font-weight: 700;
+  }
   position: fixed;
   right: 0;
   left: 0;
   z-index: 9;
   padding: 1em;
-  
   @media all and (orientation:landscape) {
 
     overflow: hidden;
@@ -26,7 +29,7 @@
 
     .nav--main {
       font-size: 1.1em;
-      margin-bottom: 0.5em;
+      margin-bottom: .5em;
     }
   }
 
