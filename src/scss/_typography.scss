@@ -27,21 +27,6 @@
        url('http://fonts.gstatic.com/l/font?kit=gk5FxslNkTTHtojXrkp-xHWv8Nzt8mDniOqXwxRfZic&skey=2f86f64984be1bbf&v=v10#OpenSansCondensed') format('svg');
 }
 
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-weight: 700;
-  font-style: normal;
-  src: url('http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xK1G_hHhJSbmG3TYw9dbn0A.eot');
-  src: url('http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xK1G_hHhJSbmG3TYw9dbn0A.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans Condensed Bold'),
-       local('Open-Sans-Condensed-700'),
-       url('http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DHr7w4p9aSvGirXi6XmeXNA.woff2') format('woff2'),
-       url('http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xM6Eyu0BCqAfob_z3hhzRFzr7w4p9aSvGirXi6XmeXNA.woff') format('woff'),
-       url('http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xJhsE6jcpsD2oq89kgohWx0.ttf') format('truetype'),
-       url('http://fonts.gstatic.com/l/font?kit=gk5FxslNkTTHtojXrkp-xF_KRdOo7MPcl77ahlJwp_0&skey=695af3be40ce75bf&v=v10#OpenSansCondensed') format('svg');
-}
-
-
 body {
   font-family: $base-font-family;
   @media all and (orientation:landscape) {
