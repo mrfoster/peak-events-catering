@@ -1,5 +1,10 @@
 .menu {
-  font-size: .5em;
+  @media all and (orientation:landscape) {
+    font-size: 2vh;
+  }
+  @media all and (orientation:portrait) {
+    font-size: 2vw;
+  }
 
   h3 {
     margin-top: 0;
