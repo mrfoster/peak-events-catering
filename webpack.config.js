@@ -62,6 +62,7 @@ module.exports = {
         new WebpackCleanupPlugin(),
         new CopyWebpackPlugin([
             { from: 'web.config' },
+            { from: 'robots.txt' },
             { from: 'assets', to: 'assets' }
         ])
     ]
