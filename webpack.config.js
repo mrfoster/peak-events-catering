@@ -63,6 +63,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: 'web.config' },
             { from: 'robots.txt' },
+            { from: 'analytics.js' },
             { from: 'assets', to: 'assets' }
         ])
     ]
