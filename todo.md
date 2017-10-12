@@ -1,0 +1,8 @@
+- Google sitemap
+- Host using static storage
+- HTTPS
+- OG Data
+- Review https://www.dareboost.com/en/report/59dc14b80cf2993c4258090f
+- https://www.google.co.uk/search?q=website+quality+checker&ie=UTF-8&oe=UTF-8&hl=en-gb&client=safari
+- Remove server header
+- Remove ETAGs?
